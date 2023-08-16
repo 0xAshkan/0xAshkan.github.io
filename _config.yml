@@ -1,0 +1,8 @@
+title: FlagMotori
+logo: /assets/img/logo.png
+description: FlagMotori Iranian CTF Team
+show_downloads: true
+google_analytics:
+# theme: r3kapig # use in local, don't commit this file
+remote_theme: 
+exclude: ['_site', 'node_modules', 'script', 'LICENSE', 'README.md']
