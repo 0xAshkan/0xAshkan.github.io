@@ -18,7 +18,7 @@ jobs:
           python-version: 3.x
 
       - name: Run Python script
-        run: python upcoming-events/upcoming-resolver.py
+        run: python upcoming-events/upcoming_resolver.py
 
       - name: Commit and push results
         run: |
