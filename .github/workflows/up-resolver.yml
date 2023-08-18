@@ -3,8 +3,6 @@ name: Run event resolver script
 on:
   schedule:
     - cron: "* * * * *"
-  
-  workflow_dispatch:
 
 jobs:
   run-script:
