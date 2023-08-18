@@ -2,7 +2,7 @@ name: Run event resolver script
 
 on:
   schedule:
-    - cron: "* */6 * * *"
+    - cron: "* * * * *"
 
 jobs:
   run-script:
