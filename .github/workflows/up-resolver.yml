@@ -1,0 +1,29 @@
+name: Run Python Script
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"  # Schedule to run every day at midnight
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Run Python script
+        run: python upcoming-events/upcoming-resolver.py
+
+      - name: Commit and push results
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add upcomings.txt
+          git commit -m "Add results"
+          git push
