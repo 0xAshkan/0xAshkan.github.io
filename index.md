@@ -31,5 +31,5 @@ Happy hacking! 🏴‍☠️💻"
 
 # Upcoming Events
 <br />
-<div id="upcoming-events"></div>
+<div id="upcoming-eventss"></div>
 <script src="{{ "/assets/js/upcoming-events.js" | relative_url }}"></script>
