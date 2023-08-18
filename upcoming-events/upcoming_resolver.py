@@ -10,4 +10,4 @@ headers = {
 req = requests.get(ctftime_url, headers=headers)
 
 with open("upcomings.txt", 'w') as wf:
-    wf.write(req.text[0])
+    wf.write(req.text)
