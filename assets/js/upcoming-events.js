@@ -1,7 +1,7 @@
 // Function to fetch upcoming events from CTFtime API
 async function fetchUpcomingEvents() {
     try {
-      const response = await fetch('https://ctftime.org/api/v1/events/?limit=5&start__gte=now');
+      const response = await fetch(window.origin+'/upcomings.txt');
       const data = await response.json();
       return data;
     } catch (error) {
