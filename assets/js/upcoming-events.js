@@ -27,16 +27,20 @@ function generateEventRow(event) {
   const eventDescription = document.createElement('td');
   eventDescription.textContent = event.format + ' - ' + event.onsite;
 
+  const eventWight = document.createElement('td');
+  eventWight.textContent = event.weight;
+
   tableRow.appendChild(eventDate);
   tableRow.appendChild(eventTitle);
   tableRow.appendChild(eventDescription);
+  tableRow.appendChild(eventWight);
 
   return tableRow;
 }
 
 // add events to the table
 function displayUpcomingEvents(events) {
-  const tableBody = document.getElementById('upcoming-events-table-body');
+  const tableBody = document.getElementById('upcoming-events');
 
   events.forEach(event => {
     const tableRow = generateEventRow(event);
