@@ -1,7 +1,7 @@
 // Function to fetch upcoming events data from URL
 async function fetchUpcomingEventsData() {
   try {
-    const response = await fetch('https://example.com/upcomings.txt');
+    const response = await fetch(window.origin+'/upcomings.txt');
     const data = await response.json();
     return data;
   } catch (error) {
