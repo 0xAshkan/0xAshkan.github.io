@@ -29,5 +29,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add upcomings.txt
-          git commit -m "Add results"
+          git commit -m "update events"
           git push
