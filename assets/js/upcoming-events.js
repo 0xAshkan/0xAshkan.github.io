@@ -1,7 +1,7 @@
-// Function to fetch upcoming events from CTFtime API
-async function fetchUpcomingEvents() {
+// Function to fetch upcoming events data from URL
+async function fetchUpcomingEventsData() {
   try {
-    const response = await fetch(window.origin+'/upcomings.txt');
+    const response = await fetch('https://example.com/upcomings.txt');
     const data = await response.json();
     return data;
   } catch (error) {
@@ -10,46 +10,52 @@ async function fetchUpcomingEvents() {
   }
 }
 
-// generate event rows in a table
-function generateEventRow(event) {
-  const tableRow = document.createElement('tr');
+// Function to create and populate the table
+function createUpcomingEventsTable(events) {
+  const table = document.createElement('table');
+  table.classList.add('upcoming-events-table');
 
-  const eventDate = document.createElement('td');
-  eventDate.textContent = new Date(event.start).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
+  const headerRow = table.insertRow();
+  const headers = ['Organizer', 'Weight', 'Title', 'URL'];
+
+  headers.forEach(headerText => {
+    const th = document.createElement('th');
+    th.textContent = headerText;
+    headerRow.appendChild(th);
   });
-
-  const eventTitle = document.createElement('td');
-  eventTitle.textContent = event.title;
-
-  const eventDescription = document.createElement('td');
-  eventDescription.textContent = event.format + ' - ' + event.onsite;
-
-  const eventWight = document.createElement('td');
-  eventWight.textContent = event.weight;
-
-  tableRow.appendChild(eventDate);
-  tableRow.appendChild(eventTitle);
-  tableRow.appendChild(eventDescription);
-  tableRow.appendChild(eventWight);
-
-  return tableRow;
-}
-
-// add events to the table
-function displayUpcomingEvents(events) {
-  const tableBody = document.getElementById('upcoming-events');
 
   events.forEach(event => {
-    const tableRow = generateEventRow(event);
-    tableBody.appendChild(tableRow);
+    const row = table.insertRow();
+    const { organizers, weight, title, url } = event;
+
+    const organizerCell = row.insertCell();
+    organizerCell.textContent = organizers[0]?.name || '';
+
+    const weightCell = row.insertCell();
+    weightCell.textContent = weight || '';
+
+    const titleCell = row.insertCell();
+    titleCell.textContent = title || '';
+
+    const urlCell = row.insertCell();
+    const urlLink = document.createElement('a');
+    urlLink.href = url || '#';
+    urlLink.textContent = url || 'N/A';
+    urlCell.appendChild(urlLink);
   });
+
+  return table;
 }
 
-// Fetch and display upcoming events
-fetchUpcomingEvents()
+// Fetch upcoming events data and populate the table
+fetchUpcomingEventsData()
   .then(events => {
-    displayUpcomingEvents(events);
+    const upcomingEventsContainer = document.getElementById('upcoming-events');
+    if (!upcomingEventsContainer) {
+      console.error("Element with ID 'upcoming-events' not found.");
+      return;
+    }
+
+    const table = createUpcomingEventsTable(events);
+    upcomingEventsContainer.appendChild(table);
   });
