@@ -30,4 +30,4 @@ jobs:
           git config --local user.name "GitHub Action"
           git add upcomings.txt
           git commit -m "update events"
-          git push
+          git push origin main
