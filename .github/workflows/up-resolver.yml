@@ -2,7 +2,7 @@ name: Run event resolver script
 
 on:
   schedule:
-    - cron: "* * * * *"
+    - cron: "*/15 * * * *"
 
   workflow_dispatch:
 
