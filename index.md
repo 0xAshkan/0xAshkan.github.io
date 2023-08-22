@@ -19,14 +19,16 @@ Happy hacking! 🏴‍☠️💻"
 <br>
 
 ## Active Members
-
-<div id="actives">
-| | |
+<!-- | | |
 | :----------------------------------------------------: | :---------------------------------------------------------- |
 | <img src="assets/profile/greedy.jpg" class="profile-image" alt="profile-image"  /> | **Gr33dyHunt3r**<br />- Twitter: [Gr33dyHunt3r](https://twitter.com/Gr33dyHunt3r) |
 | <img src="assets/profile/ashkinus.jpg" class="profile-image" alt="profile-image"  /> | **Ashkinus**<br />- Twitter: [Ashkinus](https://twitter.com/Ashkinus) |
 | <img src="assets/profile/vahid.jpg" class="profile-image" alt="profile-image"  /> | **Vahid**<br /> |
+| <img src="assets/profile/0xrz.jpg" class="profile-image" alt="profile-image"  /> | **0xrz**<br /> | -->
+| <img src="assets/profile/greedy.jpg" class="profile-image" alt="profile-image"  /> | **Gr33dyHunt3r**<br />- Twitter: [Gr33dyHunt3r](https://twitter.com/Gr33dyHunt3r) |
+| <img src="assets/profile/ashkinus.jpg" class="profile-image" alt="profile-image"  /> | **Ashkinus**<br />- Twitter: [Ashkinus](https://twitter.com/Ashkinus) |
+| <img src="assets/profile/vahid.jpg" class="profile-image" alt="profile-image"  /> | **Vahid**<br /> |
 | <img src="assets/profile/0xrz.jpg" class="profile-image" alt="profile-image"  /> | **0xrz**<br /> |
-</div>
+
 
 <br />
