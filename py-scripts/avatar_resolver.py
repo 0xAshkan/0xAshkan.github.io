@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 
 def get_github_user_profile(username):
     base_url = f"https://api.github.com/users/{username}"
@@ -14,6 +15,9 @@ def get_github_user_profile(username):
         return data
     else:
         return None
+
+if not os.path.exists('assets/profile');
+    os.mkdir('assets/profile')
 
 with open('assets/users', 'r') as rf:
     usernames = rf.read()
