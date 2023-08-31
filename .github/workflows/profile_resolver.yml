@@ -22,7 +22,7 @@ jobs:
       - name: Run python script
         run: |
           python -m pip install requests
-          python py-scripts/avatar_resolver.py
+          python py-scripts/profile_resolver.py
 
       - name: Commit and push results
         run: |
