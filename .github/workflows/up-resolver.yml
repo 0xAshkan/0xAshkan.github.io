@@ -1,4 +1,4 @@
-name: Run event resolver script
+name: Run avatar resolver script
 
 on:
   schedule:
@@ -22,7 +22,7 @@ jobs:
       - name: Run python script
         run: |
           python -m pip install requests
-          python upcoming-events/upcoming_resolver.py
+          python py-scripts/avatar_resolver.py
 
       - name: Commit and push results
         run: |
