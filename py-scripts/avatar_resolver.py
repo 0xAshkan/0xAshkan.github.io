@@ -15,7 +15,7 @@ def get_github_user_profile(username):
     else:
         return None
 
-with open('../assets/users', 'r') as rf:
+with open('assets/users', 'r') as rf:
     usernames = rf.read()
 usernames = usernames.splitlines()
 
