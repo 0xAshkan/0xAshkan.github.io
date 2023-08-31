@@ -1,11 +1,10 @@
 Gem::Specification.new do |s|
-  s.name          = 'r3kapig'
+  s.name          = 'FlagMotori'
   s.version       = '1.0.0'
   s.license       = 'CC0-1.0'
   s.authors       = ['Steve Smith', 'GitHub, Inc.', 'stypr']
-  s.email         = ['r3kapig@gmail.com']
-  s.homepage      = 'https://github.com/r3kapig/'
-  s.summary       = 'R3kapig Website, Updated version of Minimal Theme'
+  s.homepage      = 'https://github.com/FlagMotori/'
+  s.summary       = 'FlagMotori Website, Updated version of Minimal Theme'
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|
     f.match(%r{^((_includes|_layouts|_sass|assets)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
