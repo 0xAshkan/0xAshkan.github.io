@@ -24,7 +24,7 @@ Happy hacking! 🏴‍☠️💻"
 | :----------------------------------------------------: | :---------------------------------------------------------- |
 | <img src="assets/profile/mheidari98.jpg" class="profile-image" alt="profile-image"  /> | **mheidari98**<br /> |
 | <img src="assets/profile/0xashkan.jpg" class="profile-image" alt="profile-image"  /> | **Ashkinus**<br />- Twitter: [Ashkinus](https://twitter.com/Ashkinus) |
-| <img src="assets/profile/vahidaghili.jpg" class="profile-image" alt="profile-image"  /> | **vahid**<br /> |
+| <img src="assets/profile/vahid79.jpg" class="profile-image" alt="profile-image"  /> | **vahid79**<br /> |
 | <img src="assets/profile/nim0x2a.jpg" class="profile-image" alt="profile-image"  /> | **nim0x2a**<br /> |
 
 <br>
