@@ -28,6 +28,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add upcomings.txt
-          git commit -m "update events"
+          git add .
+          git commit -m "update images"
           git push origin main
