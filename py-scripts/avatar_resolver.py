@@ -25,7 +25,6 @@ for username in usernames:
     user_data = get_github_user_profile(username)
     abouts[username] = {}
     profile_image_data = requests.get(user_data['profile_image_url']).content
-    create_file = open(f'assets/profile/{username}', 'x')
     with open(f'assets/profile/{username}.jpg', 'wb') as cf:
         cf.write(profile_image_data)
 
