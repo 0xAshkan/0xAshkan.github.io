@@ -16,9 +16,6 @@ def get_github_user_profile(username):
     else:
         return None
 
-if not os.path.exists('assets/profile');
-    os.mkdir('assets/profile')
-
 with open('assets/users', 'r') as rf:
     usernames = rf.read()
 usernames = usernames.splitlines()
@@ -28,6 +25,7 @@ for username in usernames:
     user_data = get_github_user_profile(username)
     abouts[username] = {}
     profile_image_data = requests.get(user_data['profile_image_url']).content
+    create_file = open(f'assets/profile/{username}', 'x')
     with open(f'assets/profile/{username}.jpg', 'wb') as cf:
         cf.write(profile_image_data)
 
