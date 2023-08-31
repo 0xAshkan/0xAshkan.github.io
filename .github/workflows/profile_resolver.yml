@@ -1,4 +1,4 @@
-name: Run avatar resolver script
+name: Run profile resolver script
 
 on:
   schedule:
