@@ -27,7 +27,7 @@ jobs:
       - name: Commit and push results
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.name "Action"
           git add .
           git commit -m "update images"
-          git push origin master
+          git push origin main
