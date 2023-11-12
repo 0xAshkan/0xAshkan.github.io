@@ -3,6 +3,8 @@ layout: default
 id: index
 ---
 
+<script src="/assets/js/test.js"></script>
+
 # FlagMotori
 
 🚩 Greetings from FlagMotori, Iran's CTF Team! 🏴‍☠️🚀

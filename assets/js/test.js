@@ -1,4 +1,14 @@
-var myDiv = document.getElementById("mytestdiv");
-var newParagraph = document.createElement("p");
-newParagraph.textContent = "This is just for test";
-myDiv.appendChild(newParagraph);
+// script.js
+
+// Function to update the content of the span
+function updateSpanContent() {
+    var mySpan = document.getElementById("mytestdiv");
+    if (mySpan) {
+        mySpan.textContent = "New Content";
+    }
+}
+
+// Call the function when the page has finished loading
+document.addEventListener("DOMContentLoaded", function() {
+    updateSpanContent();
+});
