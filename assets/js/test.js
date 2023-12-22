@@ -4,7 +4,7 @@
 function updateSpanContent() {
     var mySpan = document.getElementById("mytestdiv");
     if (mySpan) {
-        mySpan.textContent = "***This is test content***";
+        mySpan.textContent = "**This is test content**";
     }
 }
 
